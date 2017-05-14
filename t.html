@@ -1,0 +1,22 @@
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script> 
+  <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script> 
+</head>
+ 
+ <body>
+    <a-scene>
+      <a-assets>
+        <video id="video_1" src="https://video-edge-756310.sjc01.hls.ttvnw.net/v1/playlist/Cq4CSzuYHsVkelKx95vnKCnVeMFawYTO8tGVbaYAAuOlx3-vNJxc2cwGLbEWHJrsYTXmLHpgXie7pjEWCN_M9v5EkyOiN_I7PDDdWaPlg3fciJsH9doo5x3SB2TGArUsRuY4ieyMhGS1H_vpH7PX2byl5u93aBeYIYBSdaWO9lVFYO2W-ZDnEAVqS1CFwO-VTS69VwzfenZLUwm-aCm5TQoB45fR6WqXgDlfRcEpq5LGkoSUDLKHPc8FpRlTDVX9JCtJPUT4hkg5uDaArk0YrHyjopGqHjbwGxBtJPKGGrW-qoI24D3pgyOFCw2GipfzrD_8KxaPxpzwcfTQNJKfZvJ-Z50wwr8-YPLeErZBEtZ0h2GXGLwVFvcwimHpvXivPbunFNPXY6oTtJpKAh6BfXISEPKTKI8khOrCZWaZPP9dnmQaDLpcYhP3G4yl2Q15dQ.m3u8"></video>
+      </a-assets>
+ 
+      <a-camera position="0 0 5">
+          <a-cursor id="cursor" color="yellow"></a-cursor>
+      </a-camera>
+ 
+      <a-video src="#video_1" rotation="0 180 0"></a-video>
+ 
+      <a-entity video-controls="src:#video_1"></a-entity>
+ 
+    </a-scene>
+  </body>
